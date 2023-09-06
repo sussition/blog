@@ -15,7 +15,7 @@
     
     
     <item>
-      <title>CVE-2020-7693: Unauthenticated Denial of Service (DOS) bug in SockJS Node apps</title>
+      <title>CVE-2020-7693: Unauthenticated Denial of Service (DoS) in SockJS &lt;0.3.20 Node apps</title>
       <link>/posts/cve-2020-7693/</link>
       <pubDate>Wed, 15 Jul 2020 11:58:28 +1000</pubDate>
       

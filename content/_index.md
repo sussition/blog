@@ -1,6 +1,8 @@
 +++
-title = 'About'
+framed = true
 +++
+
+## Welcome 👋
 
 Hi, I'm a cyber security researcher from Sydney, Australia.
 
