@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sussition</title>
+    
+    
+    
+    <link>/</link>
+    <description>Recent content on Sussition</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Jul 2020 11:58:28 +1000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CVE-2020-7693: Unauthenticated Denial of Service (DOS) bug in SockJS Node apps</title>
+      <link>/posts/cve-2020-7693/</link>
+      <pubDate>Wed, 15 Jul 2020 11:58:28 +1000</pubDate>
+      
+      <guid>/posts/cve-2020-7693/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+           Description # SockJS v0.3.19 calls res.end instead of res.write when receiving websocket upgrade requests. This causes an Error [ERR_STREAM_WRITE_AFTER_END]: write after end, which crashes the container running the app utilising the vulnerable SockJS.
+Vulnerable versions affected:
+Meteor JS &amp;lt;1.10.2 which use SockJS 0.3.19 SockJS 0.3.19 Exploit PoC # See the GitHub repo: https://github.com/sussition/sockjs-dos-py
+Remediation # Update SockJS to 0.3.20
+References # https://snyk.io/vuln/SNYK-JS-SOCKJS-575261 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7693 https://cwe.mitre.org/data/definitions/400.html 
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Hi, I&amp;rsquo;m a cyber security researcher from Sydney, Australia.
+Passionate about building a safer digital world for all.
+Authored CVE-2020-7693. Top 500 ranked security researcher at Bugcrowd (2021) OSCP Can I help you with anything? Don&amp;rsquo;t hesitate to reach out: public@sussition.com
+~ Andrew
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>

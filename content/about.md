@@ -1,0 +1,16 @@
++++
+title = 'About'
+framed = true
++++
+
+Hi, I'm a cyber security researcher from Sydney, Australia.
+
+Passionate about building a safer digital world for all.
+
+- Authored [CVE-2020-7693](https://nvd.nist.gov/vuln/detail/CVE-2020-7693).
+- Top 500 ranked [security researcher at Bugcrowd](https://bugcrowd.com/sussition) (2021)
+- OSCP
+
+Can I help you with anything? Don't hesitate to reach out: [public@sussition.com](mailto:public@sussition.com)
+
+~ Andrew
