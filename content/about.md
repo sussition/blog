@@ -12,4 +12,4 @@ Passionate about building a safer digital world for all.
 
 Can I help you with anything? Don't hesitate to reach out: [public@sussition.com](mailto:public@sussition.com)
 
-~ Andrew // sussition
+~ Andrew // SUSSITION
