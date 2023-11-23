@@ -60,3 +60,8 @@ paginate = 5
         identifier = "about"
         name = "About"
         url = "/about"
+      
+      [[languages.en.menu.main]]
+        identifier = "consulting"
+        name = "Consulting"
+        url = "/consulting"

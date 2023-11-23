@@ -10,6 +10,8 @@ Passionate about building a safer digital world for all.
 - Top 500 ranked [security researcher at Bugcrowd](https://bugcrowd.com/sussition) in 2021
 - OSCP & OSWA certified
 
-Can I help you with anything? Don't hesitate to reach out: [public@sussition.com](mailto:public@sussition.com)
+Can I help you with anything? 
+* Security Consulting: [/consulting](/consulting)
+* Let's chat: [public@sussition.com](mailto:public@sussition.com)
 
 ~ Andrew // SUSSITION
