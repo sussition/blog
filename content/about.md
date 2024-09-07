@@ -2,16 +2,16 @@
 title = 'About'
 +++
 
-Hi, I'm a cyber security researcher from Australia.
+Hi, I'm a security researcher from Australia.
 
-Passionate about building a safer digital world for all.
+Curious about building a safer digital world for all.
 
 - Authored [CVE-2020-7693](https://nvd.nist.gov/vuln/detail/CVE-2020-7693).
 - Top 500 ranked [security researcher at Bugcrowd](https://bugcrowd.com/sussition) in 2021
 - OSCP & OSWA certified
 
-Can I help you with anything? 
-* Security Consulting: [/consulting](/consulting)
-* Let's chat: [public@sussition.com](mailto:public@sussition.com)
+Let's connect 
+* Security Assessments: [/consulting](/consulting)
+* Email: [public@sussition.com](mailto:public@sussition.com)
 
-~ Andrew // SUSSITION
+~ a
