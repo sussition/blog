@@ -2,6 +2,6 @@
 framed = true
 +++
 
-## Welcome to my blog 👋
+## Welcome 👋
 
-Writings about tech, security & more.
+Writings about security, tech & markets.

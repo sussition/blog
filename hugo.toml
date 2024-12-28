@@ -32,28 +32,26 @@ paginate = 5
 [languages]
   [languages.en]
     title = "SUSSITION"
-    subtitle = "Security Research Blog"
-    keywords = ""
     copyright = ""
-    menuMore = "Show more"
-    writtenBy = "Written by"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    minuteReadingTime = "min read"
-    dateFormatSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
-    # leave empty to disable, enter display text to enable
-    # lastModDisplay = ""
+
+    [languages.en.params]
+      subtitle = "Security Research Blog"
+      keywords = "security,economics,technology,markets"
+      menuMore = "Show more"
+      writtenBy = "Written by"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
+      newerPosts = "Newer posts"
+      olderPosts = "Older posts"
+      minuteReadingTime = "min read"
+      dateFormatSingle = "2006-01-02"
+      dateFormatList = "2006-01-02"
+      # leave empty to disable, enter display text to enable
+      # lastModDisplay = ""
 
     [languages.en.params.logo]
       logoText = "SUSSITION"
       logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
