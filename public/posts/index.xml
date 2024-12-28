@@ -5,21 +5,21 @@
     
     
     
-    <link>//localhost:1313/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on SUSSITION</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 15 Jul 2020 11:58:28 +1000</lastBuildDate>
     
-	<atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CVE-2020-7693: Unauthenticated Denial of Service (DoS) in SockJS &lt;0.3.20 Node apps</title>
-      <link>//localhost:1313/posts/cve-2020-7693/</link>
+      <link>/posts/cve-2020-7693/</link>
       <pubDate>Wed, 15 Jul 2020 11:58:28 +1000</pubDate>
       
-      <guid>//localhost:1313/posts/cve-2020-7693/</guid>
+      <guid>/posts/cve-2020-7693/</guid>
       <description>
         
           
