@@ -9,10 +9,32 @@
     <description>Recent content in Posts on SUSSITION</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Jul 2020 11:58:28 +1000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Oct 2024 10:00:00 +1000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Greybox: An Open Source Smart Contract Security Scanner</title>
+      <link>/posts/greybox/</link>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +1000</pubDate>
+      
+      <guid>/posts/greybox/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Smart contract security remains one of the biggest challenges in blockchain development. With millions of dollars locked in smart contracts, a single vulnerability can lead to catastrophic losses.
+I built Greybox - an open-source security scanning framework that combines static and dynamic analysis to help developers catch vulnerabilities before they reach production.
+Inspiration # Inspired by Nuclei, Greybox is a template-based smart contract security scanner. This project was built for the EthSydney 2024 hackathon and awarded as a winning submission.
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>CVE-2020-7693: Unauthenticated Denial of Service (DoS) in SockJS &lt;0.3.20 Node apps</title>

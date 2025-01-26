@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>
+        Greybox: An Open Source Smart Contract Security Scanner ::
+        SUSSITION — Security Research Blog
+      </title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="Smart contract security remains one of the biggest challenges in blockchain development. With millions of dollars locked in smart contracts, a single vulnerability can lead to catastrophic losses.
+I built Greybox - an open-source security scanning framework that combines static and dynamic analysis to help developers catch vulnerabilities before they reach production.
+Inspiration # Inspired by Nuclei, Greybox is a template-based smart contract security scanner. This project was built for the EthSydney 2024 hackathon and awarded as a winning submission."
+/>
+<meta
+  name="keywords"
+  content="security,economics,technology,markets"
+/>
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/greybox/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="/style.css" />
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png" />
+<link rel="shortcut icon" href="/img/favicon.png" />
+
+
+<link href="/fonts/Inter-Italic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Regular.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Medium.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-MediumItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+<link href="/fonts/Inter-BoldItalic.woff2" rel="preload" type="font/woff2" as="font" crossorigin="">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Greybox: An Open Source Smart Contract Security Scanner">
+  <meta name="twitter:description" content="Smart contract security remains one of the biggest challenges in blockchain development. With millions of dollars locked in smart contracts, a single vulnerability can lead to catastrophic losses.
+I built Greybox - an open-source security scanning framework that combines static and dynamic analysis to help developers catch vulnerabilities before they reach production.
+Inspiration # Inspired by Nuclei, Greybox is a template-based smart contract security scanner. This project was built for the EthSydney 2024 hackathon and awarded as a winning submission.">
+
+
+
+<meta property="og:url" content="/posts/greybox/">
+  <meta property="og:site_name" content="SUSSITION">
+  <meta property="og:title" content="Greybox: An Open Source Smart Contract Security Scanner">
+  <meta property="og:description" content="Smart contract security remains one of the biggest challenges in blockchain development. With millions of dollars locked in smart contracts, a single vulnerability can lead to catastrophic losses.
+I built Greybox - an open-source security scanning framework that combines static and dynamic analysis to help developers catch vulnerabilities before they reach production.
+Inspiration # Inspired by Nuclei, Greybox is a template-based smart contract security scanner. This project was built for the EthSydney 2024 hackathon and awarded as a winning submission.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-27T10:00:00+10:00">
+    <meta property="article:modified_time" content="2024-10-27T10:00:00+10:00">
+
+
+
+
+
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >SUSSITION</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/consulting">Consulting</a></li>
+        
+      
+      
+      
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/consulting">Consulting</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg
+  class="theme-toggler"
+  width="24"
+  height="24"
+  viewBox="0 0 48 48"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
+  />
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+      <div class="content">
+        
+  
+  
+
+  <article class="post">
+    <h1 class="post-title">Greybox: An Open Source Smart Contract Security Scanner</h1>
+    <div class="post-meta">
+      
+        <time class="post-date">
+          2024-10-27
+        </time>
+
+        
+          
+        
+      
+
+      
+
+
+      
+    </div>
+
+    
+
+    
+
+    <div class="post-content">
+      
+      <p>Smart contract security remains one of the biggest challenges in blockchain development. With millions of dollars locked in smart contracts, a single vulnerability can lead to catastrophic losses.</p>
+<p>I built Greybox - an open-source security scanning framework that combines static and dynamic analysis to help developers catch vulnerabilities before they reach production.</p>
+<h2 id="inspiration">
+  Inspiration
+  <a href="#inspiration" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>Inspired by Nuclei, Greybox is a template-based smart contract security scanner. This project was built for the EthSydney 2024 hackathon and awarded as a winning submission.</p>
+<h2 id="how-greybox-works">
+  How Greybox Works
+  <a href="#how-greybox-works" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>The scanner employs a two-phase approach towards smart contract security - a combination of whitebox and blackbox testing:</p>
+<p>First, it performs static analysis by scanning contract source code against known vulnerability patterns. These patterns are defined in YAML templates, making it easy for security researchers to add new vulnerability definitions without diving into the core codebase.</p>
+<p>Then, for potentially vulnerable code sections, Greybox switches to dynamic analysis. It deploys the contracts to a local Hardhat network and attempts to exploit the suspected vulnerabilities. This holistic approach significantly reduces false positives while maintaining thorough security coverage.</p>
+<h2 id="beyond-basic-scanning">
+  Beyond Basic Scanning
+  <a href="#beyond-basic-scanning" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>What sets Greybox apart is its focus on extensibility. While the initial release covers common vulnerabilities like integer overflows and gas limit issues (built over a weekend for the hackathon), the template-based system means anyone can add detection patterns for new attack vectors as they emerge.</p>
+<p>The project also includes a browser-based UI that makes it accessible to developers who might not be security experts. Rather than just flagging issues, it provides detailed reports with context about each vulnerability and suggested mitigation strategies.</p>
+<h2 id="check-it-out">
+  Check it out
+  <a href="#check-it-out" class="h-anchor" aria-hidden="true">#</a>
+</h2>
+<p>You can find Greybox on <a href="https://github.com/sussition/greybox">GitHub here</a>.</p>
+
+    </div>
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            <span class="pagination__title-h"
+              >Read other posts</span
+            >
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+            
+              <span class="button next">
+                <a href="/posts/cve-2020-7693/">
+                  <span class="button__text">CVE-2020-7693: Unauthenticated Denial of Service (DoS) in SockJS &lt;0.3.20 Node apps</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+    
+      
+        
+
+      
+    
+  </article>
+
+      </div>
+
+      
+        <footer class="footer">
+  <div class="footer__inner">
+    
+      <a
+  href="/"
+  class="logo"
+  style="text-decoration: none;"
+>
+  
+    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
+  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
+</svg>
+</span>
+    <span class="logo__text"
+      >SUSSITION</span
+    >
+    <span class="logo__cursor"></span>
+  
+</a>
+
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span>
+        <span><a href="https://github.com/panr/hugo-theme-hello-friend" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+      
+    </div>
+
+    
+  </body>
+</html>
