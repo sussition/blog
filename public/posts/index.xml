@@ -28,9 +28,7 @@
         
         
         
-          Smart contract security remains one of the biggest challenges in blockchain development. With millions of dollars locked in smart contracts, a single vulnerability can lead to catastrophic losses.
-I built Greybox - an open-source security scanning framework that combines static and dynamic analysis to help developers catch vulnerabilities before they reach production.
-Inspiration # Inspired by Nuclei, Greybox is a template-based smart contract security scanner. This project was built for the EthSydney 2024 hackathon and awarded as a winning submission.
+          An open-source smart contract security scanner combining static and dynamic analysis.
           
         
         </description>
@@ -50,11 +48,7 @@ Inspiration # Inspired by Nuclei, Greybox is a template-based smart contract sec
         
         
         
-           Description # SockJS v0.3.19 calls res.end instead of res.write when receiving websocket upgrade requests. This causes an Error [ERR_STREAM_WRITE_AFTER_END]: write after end, which crashes the container running the app utilising the vulnerable SockJS.
-Vulnerable versions affected:
-Meteor JS &amp;lt;1.10.2 which use SockJS 0.3.19 SockJS 0.3.19 Exploit PoC # See the GitHub repo: https://github.com/sussition/sockjs-dos-py
-Remediation # Update SockJS to 0.3.20
-References # https://snyk.io/vuln/SNYK-JS-SOCKJS-575261 https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7693 https://cwe.mitre.org/data/definitions/400.html 
+          An unauthenticated denial of service (DoS) vulnerability in SockJS &lt;0.3.20 Node apps.
           
         
         </description>

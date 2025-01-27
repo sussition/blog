@@ -1,7 +1,10 @@
 +++
 title = 'Greybox: An Open Source Smart Contract Security Scanner'
 date = 2024-10-27T10:00:00+10:00
+description = 'An open-source smart contract security scanner combining static and dynamic analysis.'
 +++
+
+## Description
 
 Smart contract security remains one of the biggest challenges in blockchain development. With millions of dollars locked in smart contracts, a single vulnerability can lead to catastrophic losses. 
 
